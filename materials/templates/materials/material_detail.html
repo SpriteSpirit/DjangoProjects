@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card mb-4 box-shadow bg-dark text-white">
+            <div class="card-header">
+                <h1 class="card-title pricing-card-title text-center">Материал "{{ object.title }}" [{{ object.slug }}]</h1>
+            </div>
+            <div class="card-body">
+                <p>
+                    {{ object.body }}
+                </p>
+            </div>
+            <div class="card-footer">
+                Просмотры: {{ object.views_count }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

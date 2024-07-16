@@ -1,0 +1,49 @@
+Порядок создания проекта Django
+- mkdir projectName
+- cd projectName
+- python3 -m venv env [macOS]
+- python -m venv env [Windows]
+- source env/bin/activate [macOS]
+- env\Scripts\activate.bat [Windows]
+- pip3 install django [macOS]
+- pip install django [Windows]
+- django-admin startproject config .
+- ls -la [macOS]
+- ls -at [Windows]
+- pip3 freeze > requirements.txt [macOS]
+- pip freeze > requirements.txt [Windows]
+
+Создать приложения:
+- python3 manage.py startapp appName [macOS]
+- python manage.py startapp appName [Windows]
+
+Далее в созданную папку appName нужно добавить модуль:
+- urls.py
+
+Создать директорию templates и доп.папку для организации пространства имен appName:
+- templates
+    - appName
+
+Настроить контроллер:
+- views (написать функцию с параметром request)
+    def index(request):
+        pass
+
+Установить приложение через config/settings.py
+- INSTALLED_APPS = [
+    ...,
+
+    'appName',
+
+]
+
+Вернуться к контроллеру и вернуть HTTP-запрос:
+    from django.shortcuts import render
+
+    def index(request):
+        return render(request, 'catalog\index.html'
+
+Перед запуском на Windows нужно прописать в консоли python manage.py runserver 127.0.0.1:8088
+
+Для загрузки данных python manage.py dumpdata --indent=2 --exclude auth.permission --exclude contenttypes -o db.json
+или так python -Xutf8 testProject/manage.py dumpdata --indent=2 -o testProject/data.json

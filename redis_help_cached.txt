@@ -1,0 +1,8 @@
+Проверка работоспособности:
+- Запустите сервер Django.
+- Откройте консоль Python или shell и импортируйте django.core.cache:
+
+    from django.core.cache import cache
+    cache.set('test_key', 'test_value')
+    cache.get('test_key')
+- Если вы видите test_value, кеширование работает.

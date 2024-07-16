@@ -1,0 +1,128 @@
+[
+{
+  "model": "main.student",
+  "pk": 17,
+  "fields": {
+    "first_name": "Petr",
+    "last_name": "Petrov",
+    "avatar": "",
+    "email": null,
+    "is_active": true
+  }
+},
+{
+  "model": "main.student",
+  "pk": 18,
+  "fields": {
+    "first_name": "ivan",
+    "last_name": "ivanov",
+    "avatar": "students/scrissor.png",
+    "email": "a.backer@sky.pro",
+    "is_active": false
+  }
+},
+{
+  "model": "main.student",
+  "pk": 20,
+  "fields": {
+    "first_name": "Петр",
+    "last_name": "Петров",
+    "avatar": "",
+    "email": null,
+    "is_active": false
+  }
+},
+{
+  "model": "main.student",
+  "pk": 21,
+  "fields": {
+    "first_name": "Иван",
+    "last_name": "Семенов",
+    "avatar": "students/rock_xkvECQD.png",
+    "email": null,
+    "is_active": false
+  }
+},
+{
+  "model": "main.student",
+  "pk": 22,
+  "fields": {
+    "first_name": "Петр",
+    "last_name": "Иванов",
+    "avatar": "students/papper.png",
+    "email": null,
+    "is_active": false
+  }
+},
+{
+  "model": "main.student",
+  "pk": 24,
+  "fields": {
+    "first_name": "Ангелина",
+    "last_name": "Халуева",
+    "avatar": "",
+    "email": "a@sky.pro",
+    "is_active": true
+  }
+},
+{
+  "model": "main.subject",
+  "pk": 1,
+  "fields": {
+    "title": "Математика",
+    "description": "Супер вычисления",
+    "student": 18
+  }
+},
+{
+  "model": "main.subject",
+  "pk": 2,
+  "fields": {
+    "title": "Русский",
+    "description": "Самый крутой язык",
+    "student": 18
+  }
+},
+{
+  "model": "main.subject",
+  "pk": 3,
+  "fields": {
+    "title": "Математика",
+    "description": "Супер вычисления",
+    "student": 24
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 1,
+  "fields": {
+    "title": "Заполнение контактной информации",
+    "body": "тест",
+    "views_count": 4,
+    "is_published": true,
+    "slug": null
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 4,
+  "fields": {
+    "title": "Материал 2",
+    "body": "тест2",
+    "views_count": 1,
+    "is_published": true,
+    "slug": "material-2"
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 5,
+  "fields": {
+    "title": "Материал 3",
+    "body": "тест 3",
+    "views_count": 2,
+    "is_published": true,
+    "slug": "material-3"
+  }
+}
+]
