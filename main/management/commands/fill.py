@@ -20,4 +20,3 @@ class Command(BaseCommand):
             students_for_create.append(Student(**student_item))
 
         Student.objects.bulk_create(students_for_create)
-
